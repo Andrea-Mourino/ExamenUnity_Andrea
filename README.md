@@ -38,7 +38,7 @@ public Transform bola;
     public float distanciaLimite = 5f;
 ```
 
-- La variable bola (de tipo Transform) sirve para indicarle al enemigo quién es su objetivo; en Unity tendrás que arrastrar a tu jugador a este hueco para que el enemigo sepa a quién mirar.
+- La variable bola (de tipo Transform) sirve para indicarle al enemigo quién es su objetivo. En Unity tendrás que arrastrar al jugador a este hueco para que el enemigo sepa a quién mirar
 - La variable velocidad define lo rápido que se moverá en su persecución. Por último, distanciaLimite crea una especie de "radio de visión" o zona de alerta invisible de 5 unidades: si el jugador entra en ese radio, el enemigo lo detectará
 
 ```
