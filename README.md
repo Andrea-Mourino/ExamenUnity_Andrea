@@ -23,16 +23,7 @@ void FixedUpdate() {
 - Dentro de este bloque, el código "escucha" si el usuario está pulsando las flechas del teclado o las teclas WASD, capturando esa intención de movimiento en los ejes horizontal y vertica
 
 
-'''
-  private void OnTriggerEnter(Collider other) { 
-        if (other.gameObject.CompareTag("Moneda")) { 
-            other.gameObject.SetActive(false); //Aqui desaparece moneda
-            Debug.Log("¡Moneda recogida!"); 
-        } 
-    }
-'''
 
-- 
 
 
 Luego cree el Enemy que es un cubo con un Script llamado EnemyIA (sin Tag)
