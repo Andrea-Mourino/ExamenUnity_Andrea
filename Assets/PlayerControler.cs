@@ -15,10 +15,4 @@ public class PlayerControler : MonoBehaviour {
         rb.AddForce(movement * speed); //Aqui va la fuerza aplicada
     } 
  
-    private void OnTriggerEnter(Collider other) { 
-        if (other.gameObject.CompareTag("Moneda")) { 
-            other.gameObject.SetActive(false); //Aqui desaparece moneda
-            Debug.Log("¡Moneda recogida!"); 
-        } 
-    } 
 } 
