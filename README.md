@@ -42,7 +42,7 @@ void Update() {
 
 '''
 
--Lo primero que hace la IA en cada instante es usar la herramienta matemática Vector3.Distance. Esta función traza una línea invisible entre la posición actual del enemigo (transform.position) y la posición exacta del jugador (bola.position) para medir cuánta distancia los separa. Ese valor numérico se guarda en la variable interna llamada distancia
+- Lo primero que hace la IA en cada instante es usar la herramienta matemática Vector3.Distance. Esta función traza una línea invisible entre la posición actual del enemigo (transform.position) y la posición exacta del jugador (bola.position) para medir cuánta distancia los separa. Ese valor numérico se guarda en la variable interna llamada distancia
 
 '''
 if (distancia < distanciaLimite) { 
@@ -54,7 +54,7 @@ if (distancia < distanciaLimite) {
     }
 '''
 
--El bloque if comprueba si la distancia actual es menor que el límite de alerta que le pusimos (5 metros). Si es así, manda un mensaje a la consola indicando que ha visto a su objetivo y usa Vector3.MoveTowards para empujar suavemente al enemigo un paso más hacia la posición del jugador. La multiplicación por Time.deltaTime es fundamental aquí: asegura que el movimiento sea fluido e independiente de si tu ordenador va a 30 o a 144 fotogramas por segundo. Si el jugador está lejos de ese radio, el código salta a la opción else, se queda quieto y avisa de que está esperando
+- El bloque if comprueba si la distancia actual es menor que el límite de alerta que le pusimos (5 metros). Si es así, manda un mensaje a la consola indicando que ha visto a su objetivo y usa Vector3.MoveTowards para empujar suavemente al enemigo un paso más hacia la posición del jugador. La multiplicación por Time.deltaTime es fundamental aquí: asegura que el movimiento sea fluido e independiente de si tu ordenador va a 30 o a 144 fotogramas por segundo. Si el jugador está lejos de ese radio, el código salta a la opción else, se queda quieto y avisa de que está esperando
 
 '''
 private void OnCollisionEnter(Collision collision) { 
