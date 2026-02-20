@@ -1,5 +1,9 @@
+## Paso 1
+
 Primero cree un Plano donde sera el mapa del juego(sin Tag)
 
+
+## Paso 2
 Cree una esfera que sera el jugador con un Tag: Player. Cree un Script PlayerControler
 
 ```
@@ -23,6 +27,7 @@ void FixedUpdate() {
 - Dentro de este bloque, el código "escucha" si el usuario está pulsando las flechas del teclado o las teclas WASD, capturando esa intención de movimiento en los ejes horizontal y vertica
 
 
+## Paso 3
 
 Luego cree el Enemy que es un cubo con un Script llamado EnemyIA (sin Tag)
 
