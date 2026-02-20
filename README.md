@@ -4,7 +4,7 @@ Primero cree un Plano donde sera el mapa del juego(sin Tag)
 
 
 ## Paso 2
-Cree una esfera que sera el jugador con un Tag: Player. Cree un Script PlayerControler
+Cree una esfera que sera el jugador con un Tag: Player. Creé un Script PlayerControler
 
 ```
 public float speed = 15f; 
